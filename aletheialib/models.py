@@ -313,12 +313,12 @@ class NN:
 
             if len(images)==batch:
                 X = np.array(images).astype('float32')/255
-                yield X
+                yield (X,)
                 images = []
 
         if len(images)>0:
             X = np.array(images).astype('float32')/255
-            yield X
+            yield (X,)
         # }}}
 
     def train(self,

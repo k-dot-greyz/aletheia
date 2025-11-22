@@ -1,2 +1,3 @@
 *.pyc
 *.fea
+.DS_Store

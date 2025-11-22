@@ -102,9 +102,9 @@ def download_octave_code(method):
 
     r = ""
     while r not in ["y", "n"]:
-        r = input("Do you agree? (y/n): ")
+        r = input("Do you accept the license? (y/n): ")
         if r == "n":
-            print("The terms have not been accepted\n")
+            print("The license has not been accepted\n")
             sys.exit(0)
         elif r == "y":
             break
